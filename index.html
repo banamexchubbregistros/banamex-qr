@@ -18,7 +18,6 @@
       page_location: window.location.href
     });
 
-    // Evento personalizado para identificar escaneos del QR
     gtag('event', 'qr_scan', {
       campaign_name: 'banamex_chubb_mundial_fanfest',
       destination_url: 'https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a'
@@ -60,17 +59,17 @@
     }
 
     .mark {
-      width: 82px;
-      height: 82px;
-      border-radius: 50%;
+      width: 110px;
+      height: 110px;
       margin: 0 auto 24px;
       display: grid;
       place-items: center;
-      border: 8px solid var(--banamex-red);
-      color: var(--banamex-blue);
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      font-size: 22px;
+    }
+
+    .banamex-logo {
+      width: 110px;
+      height: 110px;
+      display: block;
     }
 
     h1 {
@@ -109,7 +108,6 @@
   </style>
 
   <script>
-    // Espera 1.5 segundos para asegurar el registro en Analytics
     setTimeout(function () {
       window.location.href =
         "https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a";
@@ -119,7 +117,10 @@
 
 <body>
   <main>
-    <div class="mark" aria-label="Banamex">b</div>
+
+    <div class="mark" aria-label="Banamex">
+      <img src="FLor_Logo.svg" alt="Banamex" class="banamex-logo">
+    </div>
 
     <h1>Redirigiendo a la experiencia Banamex</h1>
 
@@ -135,6 +136,7 @@
         haz clic aquí
       </a>.
     </p>
+
   </main>
 </body>
 </html>
