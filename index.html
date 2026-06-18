@@ -5,29 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Redirigiendo | Banamex</title>
 
-  <!-- 
-    Reemplaza G-XXXXXXXXXX con tu Measurement ID de Google Analytics 4.
-    Ejemplo: G-ABCD123456
-  -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S5MK67F1D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+
     gtag('js', new Date());
 
-    gtag('config', 'G-XXXXXXXXXX', {
+    gtag('config', 'G-3S5MK67F1D', {
       page_title: 'QR Banamex Chubb - Mundial Fan Fest',
       page_location: window.location.href
     });
 
-    // Evento personalizado para identificar claramente los escaneos del QR
+    // Evento personalizado para identificar escaneos del QR
     gtag('event', 'qr_scan', {
       campaign_name: 'banamex_chubb_mundial_fanfest',
       destination_url: 'https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a'
     });
   </script>
-
-  <meta http-equiv="refresh" content="1.2; url=https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a" />
 
   <style>
     :root {
@@ -106,27 +102,38 @@
     }
 
     @keyframes spin {
-      to { transform: rotate(360deg); }
+      to {
+        transform: rotate(360deg);
+      }
     }
   </style>
 
   <script>
-    // Redirección con pequeño retraso para permitir que Analytics registre el evento
+    // Espera 1.5 segundos para asegurar el registro en Analytics
     setTimeout(function () {
-      window.location.href = "https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a";
-    }, 1200);
+      window.location.href =
+        "https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a";
+    }, 1500);
   </script>
 </head>
 
 <body>
   <main>
     <div class="mark" aria-label="Banamex">b</div>
+
     <h1>Redirigiendo a la experiencia Banamex</h1>
-    <p>Estamos preparando tu acceso al seguro de viaje Banamex-Chubb.</p>
+
+    <p>
+      Estamos preparando tu acceso al seguro de viaje Banamex-Chubb.
+    </p>
+
     <div class="loader" aria-hidden="true"></div>
+
     <p>
       Si no eres redirigido automáticamente,
-      <a href="https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a">haz clic aquí</a>.
+      <a href="https://www.banamex-chubb.com/seguro-de-viaje/producto?utm_medium=experiencia+banamex&utm_source=qr+code&utm_campaign=vending+machine&utm_content=a">
+        haz clic aquí
+      </a>.
     </p>
   </main>
 </body>
